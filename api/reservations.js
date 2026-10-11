@@ -28,6 +28,7 @@ export default async function handler(request, response) {
   return response.status(503).json({
     ok: false,
     error: "not_configured",
+    diagnostic: "vercel-api-v2",
     hasToken: Boolean(token),
     hasChatId: Boolean(chatId)
   });
