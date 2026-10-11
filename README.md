@@ -23,3 +23,7 @@ npm start
 Then open [http://localhost:3000](http://localhost:3000). A completed reservation form is sent only to the `TELEGRAM_CHAT_ID` in `.env.telegram.local`.
 
 For a public launch, deploy this project to a Node.js-capable host and add the same two values as server-side secrets there. Do not place them in frontend files or a repository.
+
+## Vercel form endpoint
+
+If the project is deployed with Vercel, the `api/reservations.js` file receives form requests. Add `TELEGRAM_BOT_TOKEN` and `TELEGRAM_CHAT_ID` in the Vercel project's **Settings → Environment Variables**, select **Production** for both, and redeploy after saving them.
