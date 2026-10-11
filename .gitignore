@@ -9,8 +9,3 @@ coverage/
 
 # Local Telegram credentials — never commit this file
 .env.telegram.local
-
-# Vercel keeps its linked-project data locally
-.vercel/
-
-.vercel
