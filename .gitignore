@@ -1,0 +1,16 @@
+# Local tooling and operating-system files
+node_modules/
+.DS_Store
+Thumbs.db
+
+# Generated preview/build files (keep the static site source in dist/)
+.vite/
+coverage/
+
+# Local Telegram credentials — never commit this file
+.env.telegram.local
+
+# Vercel keeps its linked-project data locally
+.vercel/
+
+.vercel

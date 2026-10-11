@@ -1,0 +1,6 @@
+.env.telegram.local
+server.mjs
+package.json
+node_modules
+.git
+.vercel
