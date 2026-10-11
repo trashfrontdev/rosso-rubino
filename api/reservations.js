@@ -24,7 +24,14 @@ export default async function handler(request, response) {
 
   const token = process.env.TELEGRAM_BOT_TOKEN;
   const chatId = process.env.TELEGRAM_CHAT_ID;
-  if (!token || !chatId) return response.status(503).json({ ok: false, error: "not_configured" });
+  if (!token || !chatId) {
+  return response.status(503).json({
+    ok: false,
+    error: "not_configured",
+    hasToken: Boolean(token),
+    hasChatId: Boolean(chatId)
+  });
+}
 
   const message = [
     "Новая заявка · Rosso Rubino", "", `Имя: ${reservation.name}`,
